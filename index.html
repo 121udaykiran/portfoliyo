@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UDAY KIRAN | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right top, #ffecd2, #fcb69f, #ff9a9e, #fad0c4, #ffd1ff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffffff;
+      color: #232526;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    section {
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background: #ffdee9;
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    aside {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    ul.skills-list, ul.tools-list {
+      list-style: none;
+      text-align: left;
+      padding-left: 0;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    ul.skills-list li, ul.tools-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul.skills-list li::before, ul.tools-list li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+    }
+
+    .profile-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0984e3;
+  display: block;
+  margin: 20px auto; /* Centers the image */
+}
+
+    .cert-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    button {
+      background: #0984e3;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #74b9ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2d3436;
+      color: white;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #fdcb6e;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #2d3436;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #444;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+        margin-left: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UDAY KIRAN</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>🙋‍♂️ About Me</h2>
+    <img src="C:\Users\Manjunatha\Downloads\uday photo.jpeg" alt="Uday Kiran" class= "profile-photo" />
+    <p>“I’m Uday Kiran — a passionate Computer Science student driven by curiosity and creativity. I enjoy solving real-world problems through code, exploring data structures, algorithms, and software development. My goal is to build intelligent and efficient systems while continuously learning across domains like web development, mobile apps, and emerging technologies.”</p>
+
+  <section id="profile">
+    <h2>👤 Profile</h2>
+    <article>
+      <p><strong>Name:</strong> UDAY KIRAN</p>
+      <p><strong>Email:</strong> uday121kiran@gmail.com</p>
+      <p><strong>Experience:</strong> 1 Year in mini project </p>
+      <p><strong>Phone:</strong> 6363749943</p>
+      <p><strong>Address:</strong> S.Agarhar village,mathanahalli(post),kolar(T&K),karanataka</p>
+    </article>
+    <aside>
+      <h3>Did You Know?</h3>
+      <p>"As a dedicated rider, I find that every trail offers fresh inspiration and new challenges to conquer."</p>
+    </aside>
+  </section>
+
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <ul class="skills-list">
+      <li>PRESIDENCY UNIVERSITY(2022-2026</li>
+      <li>PUC - SHAYADHRI PU College (2018 - 2020)</li>
+      <li>SSLC - SABARMATHI HIGH SCHOOL (2017 - 2018)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>💡 Skills</h2>
+    <div>
+      <h3>Programming Languages</h3>
+      <ul class="skills-list">
+        <li>HTML, CSS, and JavaScript</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Frameworks & Libraries</h3>
+      <ul class="skills-list">
+        <li>React.js & Node.js</li>
+        <li>Python</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>🛠 Tools</h2>
+    <ul class="tools-list">
+      <li>Android Studio</li>
+      <li>Git & GitHub</li>
+      <li>Docker</li>
+      <li>Jenkins</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>📁 projects</h2>
+    <article>
+      <h3>Project: <span class="highlight">Nutrition Tracker App using Android Studio</span></h3>
+      <p>Helps users monitor and manage their food intake with detailed insights into calories and nutrients.</p>
+    </article>
+    <article>
+      <h3>Project: <span class="highlight">Movie Ticket Booking Website</span></h3>
+      <p>Users can browse showtimes, select movies, and book tickets online using this responsive web app.</p>
+    </article>
+    <button onclick="alert('Let\'s work together!')">🤝 Collaborate</button>
+  </section>
+
+  <section id="certifications">
+    <h2>📜 Certifications</h2>
+    <p>Here are some of my certification achievements:</p>
+    <table>
+      <tr>
+        <td>
+    <img src="C:\Users\Manjunatha\Pictures\Screenshots\Screenshot 2025-04-28 224033.png" alt="Certificate 1" class="cert-img">
+  </td>
+        <td>
+    <img src="C:\Users\Manjunatha\Pictures\Screenshots\Screenshot 2025-04-28 224018.png" alt="Certificate 2" class="cert-img">
+    </td>
+  </tr>
+  </table>
+    <p>Feel free to contact me for more details at <a href="mailto:uday121kiran@gmail.com">uday121kiran@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 UDAY KIRAN | Free Thinker | Made with ❤️</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
